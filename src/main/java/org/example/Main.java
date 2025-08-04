@@ -52,6 +52,7 @@ public class Main {
         System.out.println("Unit price: " + unitPrice);
         System.out.println("Quantity: " + quantity);
         System.out.println("Is Member: " + membership);
+        System.out.println("Customer Tier: " + customerTier);
         System.out.println("Shipping Zone: " + shippingZone);
         System.out.println("Discount Code: " + discountCode);
 
@@ -77,7 +78,7 @@ public class Main {
 
         double afterTierDiscount = subTotal - tierDiscountedAmount;
 
-        System.out.println("After Tier Discount (Gold - 15%): " +afterTierDiscount);
+        System.out.println("After Tier Discount " + customerTier + " - " + discountTier + "% : "+afterTierDiscount);
 
         double quantityDiscount = 0;
 
